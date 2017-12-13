@@ -7,7 +7,7 @@ for i = 2:itermax
     x0 = x1;
     p = A*x0;
     x1 = p/norm(p);
-    lamda_2 = x1'*A*x1;
+    lamda_2 = (x1)'*A*x1;
     if abs(lamda_2 - lamda_1) <= tol
         break;
     end

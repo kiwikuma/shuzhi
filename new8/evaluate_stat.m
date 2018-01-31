@@ -14,7 +14,7 @@ for i = 1:4
         for j = 1:4
             elemat(i,j) = elemat(i,j)+lamda*(invJ*dN(:,i))'*(invJ*dN(:,j))*detJ*gpw(k);
         end
-        elevec(i) = elevec(i) + q_punkt*N(i)*detJ*gpw(k);
+        %elevec(i) = elevec(i) + q_punkt*N(i)*detJ*gpw(k);
     end
 end
 end
